@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tockd Privacy Policy</title>
+<!-- Same words as app/src/main/java/com/screencheck/privacy/PrivacyPolicy.kt (PrivacyPolicyTest checks). -->
+<style>
+  :root { --bg: #f6f6f9; --fg: #1b1b21; --muted: #5d5e66; --accent: #e0620d; --card: #ffffff; --line: #e3e3ea; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #131316; --fg: #e5e4ea; --muted: #a9a9b3; --accent: #ff8a3d; --card: #1d1d22; --line: #2e2e35; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 1.9rem; margin: 0 0 4px; }
+  .date { color: var(--muted); margin: 0 0 24px; }
+  section { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 16px 20px; margin: 0 0 14px; }
+  h2 { font-size: 1.1rem; margin: 0 0 6px; color: var(--accent); }
+  p { margin: 6px 0; }
+  a { color: var(--accent); overflow-wrap: anywhere; }
+</style>
+</head>
+<body>
+<main>
+<h1>Tockd Privacy Policy</h1>
+<p class="date">Effective 18 October 2026</p>
+
+<section>
+<h2>Summary</h2>
+<p>Tockd keeps everything on your own devices. There are no accounts, no ads, no analytics and no Tockd servers. The developer never receives your information.</p>
+</section>
+
+<section>
+<h2>What Tockd stores on the phone</h2>
+<p>A first name, chores, prizes, XP, coins, badges, streaks, block schedules, earning rules and settings.</p>
+<p>The parent's override code, stored only as a salted hash, so the code itself can't be read back.</p>
+<p>The override history: when the code was used and what for.</p>
+<p>Daily totals for the weekly report: minutes earned and spent, steps, and screen time per app.</p>
+<p>Workout progress: exercises, reps, sets and any gym weights typed in.</p>
+</section>
+
+<section>
+<h2>The Accessibility service (the blocker)</h2>
+<p>Tockd uses Android's Accessibility service to block apps. It isn't an accessibility tool for people with disabilities.</p>
+<p>It sees which app is on screen and, in supported web browsers, the address in the address bar, so it can show the lock screen over blocked apps and websites.</p>
+<p>On Android's settings pages for Tockd itself, it looks for a few words, such as the app's name, so protection can't be switched off without the parent's code.</p>
+<p>It counts the minutes spent in blocked apps. It doesn't read messages, passwords or what you type, doesn't take screenshots, and doesn't save or send what's on the screen.</p>
+<p>You turn it on yourself in Android's settings, after Tockd explains this, and you can turn it off there. If protection is set up, a parent's code may be needed first.</p>
+</section>
+
+<section>
+<h2>Usage access</h2>
+<p>With Usage access, Tockd reads how long each app was used, to show the Screen time page and the weekly report. This stays on the phone.</p>
+</section>
+
+<section>
+<h2>Health Connect</h2>
+<p>If you connect Health Connect, Tockd reads steps and active calories (for the daily bonus and unlock minutes) and writes finished workouts. This stays on the phone and in Health Connect, and you can disconnect or delete it in Health Connect at any time.</p>
+</section>
+
+<section>
+<h2>What leaves the phone</h2>
+<p>Update checks (the version downloaded from GitHub): Tockd downloads version information and new versions from GitHub. GitHub can see your IP address, as with any website.</p>
+<p>A paired Windows PC (optional): over your home Wi-Fi, the phone sends the PC the override code's hash and salt (never the code), the block schedules, the PC game and YouTube limits, and the school email used to recognise the school Chrome profile. Messages are signed so they can't be faked, but they aren't encrypted.</p>
+<p>A linked parent's phone (optional): over your home Wi-Fi, the child's phone sends the child's first name, the names and times of ticked chores, and which are waiting for a spot check. The parent's phone sends back its answers. Messages are signed so they can't be faked, but they aren't encrypted. The override code is never sent.</p>
+<p>Nothing goes to the developer or to any other company. Tockd doesn't sell or share information.</p>
+</section>
+
+<section>
+<h2>Children</h2>
+<p>Tockd is meant to be set up by a parent for their child, or by a teen together with a parent. It collects nothing from children for the developer: everything stays on the family's own devices.</p>
+</section>
+
+<section>
+<h2>Deleting your information</h2>
+<p>Settings, then Delete account, deletes everything Tockd stores on the phone (it needs the parent's code if one is set). Uninstalling Tockd also deletes it.</p>
+<p>Workouts written to Health Connect stay there until you delete them in Health Connect. A paired PC keeps its copy of the schedules until it's paired again or the PC app is removed.</p>
+</section>
+
+<section>
+<h2>Changes</h2>
+<p>If this policy changes, the new version will be in the app and on this page, with a new date.</p>
+</section>
+
+<section>
+<h2>Contact</h2>
+<p>Questions about privacy: open an issue at <a href="https://github.com/ChaosWolfLord/tockd/issues">https://github.com/ChaosWolfLord/tockd/issues</a></p>
+</section>
+<p style="color: var(--muted); font-size: 0.9rem; margin-top: 24px;"><a href="index.html">Tockd</a> &nbsp; <a href="delete-data.html">Delete your data</a></p>
+</main>
+</body>
+</html>
