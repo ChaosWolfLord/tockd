@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tockd changelog</title>
+<meta name="description" content="What changed in each version of Tockd.">
+<style>
+  :root { --bg: #f6f6f9; --fg: #1b1b21; --muted: #5d5e66; --accent: #e0620d; --on-accent: #ffffff; --card: #ffffff; --line: #e3e3ea; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #131316; --fg: #e5e4ea; --muted: #a9a9b3; --accent: #ff8a3d; --on-accent: #1b1b21; --card: #1d1d22; --line: #2e2e35; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 40px 16px 64px; }
+  h1 { font-size: 2.2rem; margin: 0 0 6px; }
+  .lead { color: var(--muted); font-size: 1.1rem; margin: 0 0 24px; }
+  ol.log { list-style: none; padding: 0; margin: 0; }
+  ol.log li { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 12px 20px; margin: 0 0 10px; }
+  .v { font-weight: 700; color: var(--accent); margin-right: 10px; }
+  .d { color: var(--muted); font-size: 0.9rem; }
+  ol.log p { margin: 4px 0 0; }
+  .note { color: var(--muted); font-size: 0.95rem; margin: 18px 0 0; }
+  a { color: var(--accent); overflow-wrap: anywhere; }
+  footer { color: var(--muted); font-size: 0.9rem; margin-top: 24px; }
+  footer a { margin-right: 14px; }
+</style>
+</head>
+<body>
+<main>
+<h1>Changelog</h1>
+<p class="lead">What changed in each version of <a href="./">Tockd</a>, newest first.</p>
+
+<ol class="log">
+<!-- NEW-ENTRIES -->
+<li><span class="v">0.68</span><span class="d">21 Oct 2026</span><p>In setup the last button now says Next, and pressing Back on the supervisor's page returns you to setup.</p></li>
+<li><span class="v">0.67</span><span class="d">21 Oct 2026</span><p>Spot checks is now called Parent Phone Links in Protection. Workouts no longer ask for an age: everyone gets one standard plan.</p></li>
+<li><span class="v">0.66</span><span class="d">20 Oct 2026</span><p>If a linked supervisor's phone goes quiet for days (for example Tockd was uninstalled there), Tockd says so and offers to unlink it. Linking the supervisor's phone again replaces the dead link.</p></li>
+<li><span class="v">0.65</span><span class="d">20 Oct 2026</span><p>Fixes Tockd being impossible to uninstall: Android's app info and uninstall screens are no longer blocked.</p></li>
+<li><span class="v">0.64</span><span class="d">20 Oct 2026</span><p>Behind-the-scenes update for the Google Play version. Nothing changes for you.</p></li>
+<li><span class="v">0.63</span><span class="d">20 Oct 2026</span><p>Apps you install later are no longer blocked automatically; add them to the blocked list yourself.</p></li>
+<li><span class="v">0.62</span><span class="d">19 Oct 2026</span><p>Bedtime and the other schedules only lock your blocked apps; the old Block everything wording is gone.</p></li>
+<li><span class="v">0.61</span><span class="d">19 Oct 2026</span><p>On a supervisor's phone, Finished today lists each chore once.</p></li>
+<li><span class="v">0.60</span><span class="d">19 Oct 2026</span><p>While Tockd is active, a quiet notification shows what's locked. Tockd is now described as a family app. Screen time counts every blocked app correctly.</p></li>
+<li><span class="v">0.59</span><span class="d">19 Oct 2026</span><p>Much smaller app: about 5 MB instead of 55 MB, so updates download faster and use less space.</p></li>
+<li><span class="v">0.58</span><span class="d">19 Oct 2026</span><p>Frees up space: downloaded updates are now deleted once installed (they were piling up in Tockd's cache).</p></li>
+<li><span class="v">0.57</span><span class="d">19 Oct 2026</span><p>A linked supervisor's phone now gets a notification when Tockd's blocker is switched off (and when it's back on).</p></li>
+<li><span class="v">0.56</span><span class="d">19 Oct 2026</span><p>The supervisor chooses spot checks right after setting the code. Lowering the daily step or calorie goal needs the code. A supervisor's phone now only notifies about spot checks.</p></li>
+<li><span class="v">0.55</span><span class="d">19 Oct 2026</span><p>Closes loopholes: changing or deleting a required chore needs the code; apps installed later start out blocked; blocked apps in split screen or picture-in-picture are blocked too; rushed workouts don't count; steps typed in by hand don't count.</p></li>
+<li><span class="v">0.54</span><span class="d">19 Oct 2026</span><p>Chores ticked off Wi-Fi count straight away, but one picked for a spot check waits for the supervisor's OK once the phone is back on Wi-Fi. Un-ticking a spot-checked chore and ticking it again no longer skips the check.</p></li>
+<li><span class="v">0.53</span><span class="d">19 Oct 2026</span><p>Spot checks only happen while the phone is on Wi-Fi. Off Wi-Fi, ticked chores count straight away.</p></li>
+<li><span class="v">0.52</span><span class="d">18 Oct 2026</span><p>Shows the new, shorter tour once, even if you've seen the old one.</p></li>
+<li><span class="v">0.51</span><span class="d">18 Oct 2026</span><p>The tour (Settings &gt; How Tockd works) is shorter: 3 pages, starting with your supervisor, who holds the code.</p></li>
+<li><span class="v">0.50</span><span class="d">18 Oct 2026</span><p>Bedtime is one schedule every night now (no separate weekend bedtime), and setup lets you connect Health Connect for steps and calories.</p></li>
+<li><span class="v">0.49</span><span class="d">18 Oct 2026</span><p>New setups no longer block social media and video apps automatically: the supervisor picks what to block.</p></li>
+<li><span class="v">0.48</span><span class="d">18 Oct 2026</span><p>Setup: a name is required, 'Goes to school/work', and one bedtime for every night.</p></li>
+<li><span class="v">0.47</span><span class="d">18 Oct 2026</span><p>Deleting your account now shows a confirmation screen before setup starts again.</p></li>
+<li><span class="v">0.46</span><span class="d">18 Oct 2026</span><p>Blocked apps now shows only the apps on your phone. Sites like instagram.com stay blocked in the browser (see Websites at the bottom).</p></li>
+<li><span class="v">0.45</span><span class="d">18 Oct 2026</span><p>Blocked apps now lists every app on your phone, with search, so any app can be blocked.</p></li>
+<li><span class="v">0.44</span><span class="d">18 Oct 2026</span><p>New: a quick tour of every feature. It shows once, and it's always in Settings, How Tockd works.</p></li>
+<li><span class="v">0.43</span><span class="d">18 Oct 2026</span><p>Uninstall protection has been removed. Updating turns it off automatically if it was on.</p></li>
+<li><span class="v">0.42</span><span class="d">18 Oct 2026</span><p>Cleaner Workout tab: no more day row with A/B/C/R letters.</p></li>
+<li><span class="v">0.41</span><span class="d">18 Oct 2026</span><p>Essential apps are gone: any app you don't block always works. School, homework, bedtime and Lock now keep the blocked apps locked.</p></li>
+<li><span class="v">0.40</span><span class="d">18 Oct 2026</span><p>Tockd now says "supervisor" instead of "parent" for whoever holds the override code.</p></li>
+<li><span class="v">0.39</span><span class="d">18 Oct 2026</span><p>Your streak now sets your rank: days in a row with the chores done. XP and levels are gone, and prizes no longer need a level.</p></li>
+<li><span class="v">0.38</span><span class="d">18 Oct 2026</span><p>Prepared for Google Play. Small text fix on the lock screen.</p></li>
+<li><span class="v">0.37</span><span class="d">18 Oct 2026</span><p>New Tockd icon: a clock inside the badge. Website moved to chaoswolflord.github.io/tockd.</p></li>
+<li><span class="v">0.36</span><span class="d">18 Oct 2026</span><p>ScreenCheck is now called Tockd. Same app, same data; just a new name.</p></li>
+<li><span class="v">0.35</span><span class="d">18 Oct 2026</span><p>Privacy policy (Settings, About). A clear explanation of what the blocker sees before it's turned on.</p></li>
+<li><span class="v">0.34</span><span class="d">17 Oct 2026</span><p>Shorter Settings and Protection pages. Loosening a schedule now needs the parent's code (the 'wait 24 hours' option is gone).</p></li>
+<li><span class="v">0.33</span><span class="d">17 Oct 2026</span><p>Shorter first-time setup: 3 quick pages instead of 6. Everything else starts with sensible settings you can change later.</p></li>
+<li><span class="v">0.32</span><span class="d">17 Oct 2026</span><p>Spot checks: about 1 in 5 ticked chores waits for a parent's OK (turn on in Protection, Spot checks). A parent's own phone can run Tockd in parent mode and link to the child's phone over the home Wi-Fi to get finished chores and answer spot checks.</p></li>
+<li><span class="v">0.31</span><span class="d">16 Oct 2026</span><p>Settings: Delete account (starts over at setup). Protection: turn off uninstall protection. Both need the parent's code.</p></li>
+<li><span class="v">0.30</span><span class="d">16 Oct 2026</span><p>Version 1: set up for any family. Pick chores, prizes, bedtimes, school days and earning rules in setup, and turn workouts on or off.</p></li>
+</ol>
+
+<p class="note">Versions 0.8 to 0.29 were early test builds made for one family before Tockd was opened up to everyone, so they aren't listed.</p>
+
+<footer>
+<a href="./">Home</a>
+<a href="privacy.html">Privacy policy</a>
+<a href="delete-data.html">Delete your data</a>
+<a href="https://github.com/ChaosWolfLord/tockd/issues">Contact</a>
+</footer>
+</main>
+</body>
+</html>
