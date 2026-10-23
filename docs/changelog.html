@@ -3,30 +3,46 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#E8590C">
 <title>Tockd changelog</title>
 <meta name="description" content="What changed in each version of Tockd.">
 <style>
-  :root { --bg: #f6f6f9; --fg: #1b1b21; --muted: #5d5e66; --accent: #e0620d; --on-accent: #ffffff; --card: #ffffff; --line: #e3e3ea; }
+  :root { --bg: #FFF7EF; --fg: #201A17; --muted: #5D4E45; --accent: #E8590C; --on-accent: #FFFFFF; --card: #FFFFFF; --line: #D9C3B5;
+    --teal: #0B8F83; --purple: #6D3CF0; --pc: #FFDCC8; --on-pc: #3A1200; --sc: #C9F4EC; --on-sc: #00302B; --tc: #E5DBFF; --on-tc: #22005C; }
   @media (prefers-color-scheme: dark) {
-    :root { --bg: #131316; --fg: #e5e4ea; --muted: #a9a9b3; --accent: #ff8a3d; --on-accent: #1b1b21; --card: #1d1d22; --line: #2e2e35; }
+    :root { --bg: #16121F; --fg: #EDE6F5; --muted: #BDB2CC; --accent: #FF8A3D; --on-accent: #3A1700; --card: #211B2E; --line: #4A3F5E;
+      --teal: #45DCC8; --purple: #C2ABFF; --pc: #6B2C00; --on-pc: #FFDCC8; --sc: #005048; --on-sc: #C9F4EC; --tc: #4A2BA8; --on-tc: #E5DBFF; }
   }
   * { box-sizing: border-box; }
   body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
-  main { max-width: 720px; margin: 0 auto; padding: 40px 16px 64px; }
-  h1 { font-size: 2.2rem; margin: 0 0 6px; }
-  .lead { color: var(--muted); font-size: 1.1rem; margin: 0 0 24px; }
-  ol.log { list-style: none; padding: 0; margin: 0; }
-  ol.log li { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 12px 20px; margin: 0 0 10px; }
-  .v { font-weight: 700; color: var(--accent); margin-right: 10px; }
-  .d { color: var(--muted); font-size: 0.9rem; }
-  ol.log p { margin: 4px 0 0; }
-  .note { color: var(--muted); font-size: 0.95rem; margin: 18px 0 0; }
+  .brand { display: flex; align-items: center; justify-content: space-between; gap: 12px; max-width: 720px; margin: 0 auto; padding: 14px 16px 0; }
+  .brand a.logo { font-weight: 800; font-size: 1.25rem; color: var(--fg); text-decoration: none; }
+  .brand a.logo span { display: inline-block; background: var(--accent); color: var(--on-accent); border-radius: 12px; padding: 0 8px; margin-right: 8px; }
+  .brand nav a { color: var(--muted); text-decoration: none; font-size: 0.95rem; margin-left: 14px; }
+  .brand nav a:hover { color: var(--accent); }
+  main { max-width: 720px; margin: 0 auto; padding: 24px 16px 64px; }
+  h1 { font-size: 2rem; margin: 0 0 6px; }
+  section { background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 16px 20px; margin: 0 0 14px; }
+  h2 { font-size: 1.1rem; margin: 0 0 6px; color: var(--accent); }
+  p, li { margin: 6px 0; }
+  ul, ol { padding-left: 22px; margin: 6px 0; }
   a { color: var(--accent); overflow-wrap: anywhere; }
   footer { color: var(--muted); font-size: 0.9rem; margin-top: 24px; }
   footer a { margin-right: 14px; }
+  .lead { color: var(--muted); font-size: 1.1rem; margin: 0 0 24px; }
+  ol.log { list-style: none; padding: 0; margin: 0; }
+  ol.log li { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 12px 20px; margin: 0 0 10px; }
+  .v { display: inline-block; font-weight: 700; background: var(--pc); color: var(--on-pc); border-radius: 999px; padding: 0 10px; margin-right: 10px; }
+  .d { color: var(--muted); font-size: 0.9rem; }
+  ol.log p { margin: 4px 0 0; }
+  .note { color: var(--muted); font-size: 0.95rem; margin: 18px 0 0; }
 </style>
 </head>
 <body>
+<header class="brand">
+<a class="logo" href="./"><span>⏰</span>Tockd</a>
+<nav><a href="changelog.html">What's new</a><a href="privacy.html">Privacy</a></nav>
+</header>
 <main>
 <h1>Changelog</h1>
 <p class="lead">What changed in each version of <a href="./">Tockd</a>, newest first.</p>
